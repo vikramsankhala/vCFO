@@ -54,14 +54,24 @@ const sections = [
 export default function PitchPage() {
   return (
     <main>
-      <h1>Investor Pitch</h1>
-      <p>Concise overview of the vCFO opportunity.</p>
-      {sections.map((section) => (
-        <section key={section.title}>
-          <h2>{section.title}</h2>
-          <p>{section.body}</p>
-        </section>
-      ))}
+      <section className="section">
+        <div className="container">
+          <div className="pill">Investor Narrative</div>
+          <h1 style={{ marginTop: 16 }}>vCFO Pitch Deck</h1>
+          <p className="muted" style={{ maxWidth: 720 }}>
+            A focused overview of the opportunity, product advantage, and go-to-market
+            strategy for a modern CFO intelligence layer.
+          </p>
+          <div className="grid grid-2" style={{ marginTop: 24 }}>
+            {sections.map((section) => (
+              <div className="card" key={section.title}>
+                <h3 style={{ marginTop: 0 }}>{section.title}</h3>
+                <p className="muted">{section.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

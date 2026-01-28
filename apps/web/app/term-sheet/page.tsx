@@ -18,18 +18,27 @@ const terms = [
 export default function TermSheetPage() {
   return (
     <main>
-      <h1>Term Sheet (Draft)</h1>
-      <p>Indicative, non-binding terms for discussion.</p>
-      <table>
-        <tbody>
-          {terms.map((term) => (
-            <tr key={term.label}>
-              <td style={{ paddingRight: 16, fontWeight: 600 }}>{term.label}</td>
-              <td>{term.value}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <section className="section">
+        <div className="container">
+          <div className="pill">Indicative</div>
+          <h1 style={{ marginTop: 16 }}>Term Sheet (Draft)</h1>
+          <p className="muted">
+            Non-binding summary of key terms for a seed financing round.
+          </p>
+          <div className="card" style={{ marginTop: 24 }}>
+            <table className="table">
+              <tbody>
+                {terms.map((term) => (
+                  <tr key={term.label}>
+                    <td style={{ paddingRight: 16, fontWeight: 600 }}>{term.label}</td>
+                    <td>{term.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
