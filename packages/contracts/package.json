@@ -1,0 +1,14 @@
+{
+  "name": "@vcfo/contracts",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./api": "./src/api/index.ts",
+    "./api/*": "./src/api/*.ts",
+    "./finance": "./src/finance/index.ts",
+    "./sap/*": "./src/sap/*.ts"
+  }
+}

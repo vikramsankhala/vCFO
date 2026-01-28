@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vcfo-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vcfo-web
+  template:
+    metadata:
+      labels:
+        app: vcfo-web
+    spec:
+      containers:
+        - name: web
+          image: vcfo-web:latest
+          ports:
+            - containerPort: 3000

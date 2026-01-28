@@ -1,0 +1,18 @@
+{
+  "name": "vcfo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @vcfo/api\" \"npm run dev -w @vcfo/web\"",
+    "build": "npm run build -w @vcfo/api && npm run build -w @vcfo/web",
+    "lint": "npm run lint -w @vcfo/api && npm run lint -w @vcfo/web",
+    "test": "npm run test -w @vcfo/api && npm run test -w @vcfo/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "@vcfo/sap-connectors",
+  "private": true,
+  "type": "module"
+}

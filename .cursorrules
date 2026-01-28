@@ -1,0 +1,9 @@
+# Project Cursor Rules
+
+- Use TypeScript for all application code.
+- Backend: Fastify + Prisma + PostgreSQL (no raw SQL).
+- Frontend: Next.js 15, React 18, TypeScript, Tailwind CSS.
+- Follow the API contracts in contracts.md exactly.
+- Shared types live in packages/contracts and are reused by apps/api and apps/web.
+- Prefer functional, composable modules over large classes.
+- All new routes must include basic tests in apps/api/test.

@@ -1,0 +1,5 @@
+## Global rules
+
+- Keep contracts in `contracts.md` and `packages/contracts`.
+- Keep API/DB alignment via shared types.
+- Keep changes small and testable.

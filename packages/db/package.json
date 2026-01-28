@@ -1,0 +1,5 @@
+{
+  "name": "@vcfo/db",
+  "private": true,
+  "type": "module"
+}
